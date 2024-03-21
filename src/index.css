@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* styling for modal */
+.modal-wrapper{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(189, 189, 189, 0.9);
+}
+
+.modal-container{
+  position: fixed;
+  max-width: 30rem;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+.modal-container > label > input[type ="radio"]{
+   display: none;
+}
+
+.modal-container > label{
+  position: relative;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 0.8rem;
+  border: 3px solid #4189e0;
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  background-color: #4189e0;
+}
+
+.modal-container >label:before{
+  content: "";
+  height: 2em;
+  width: 2em;
+  background-color: white;
+  border: 3px solid white;
+  border-radius: 15%;
+}
+
+.modal-wrapper > label > input[type = "radio"]:checked + .modal-container>label:before{
+ height: 1em;
+ width: 1em;
+ border: 0.65em solid white;
+}
+
+.modal-container > label > input[type = "radio"] + label{
+  background-color: #4189e0;
+  color: #fff;
+}
