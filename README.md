@@ -1,5 +1,16 @@
 # Getting Started with Create React App
 
+Link to the live project :- https://quiz-alma.web.app/sign-in
+
+How to run the project on your system :
+1) Clone the github repo using the url available
+2) run git clone "repo url" in the terminal
+3) run npm install afterwards
+4) then run cd AlmaBetter-Quiz
+5) run npm start
+
+The server will start running, and it will open up in the browser.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
